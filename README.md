@@ -114,13 +114,13 @@ update the ansible configuration file /etc/ansible.cfg and set the remote_user p
 
 
 - Which file is the playbook? filebeat-playbook.yml 
-- 
+
 - Where do you copy it? /etc/ansible/roles
-- 
+
 - Which file do you update to make Ansible run the playbook on a specific machine? /etc/ansible/hosts file (IP of the Virtual Machines)
-- 
+
 - You would need to navigate to /etc/ansible/hosts file and there you can specify the IP of the virtual machine that needs to run the playbook.
-- 
+
 How do I specify which machine to install the ELK server on versus which to install Filebeat on? I would needs to specify two separate goroups in the etc/ansible/hosts file. I would have a wevserver group and underneath i would specify the Ips of the VMs that filebeat will be installed on. The next group that I will create is called [elk] and underneath that group I will specify the Ip of the VM that elk will be installed on.
 
 - _Which URL do you navigate to in order to check that the ELK server is running? http://[elk public-ip]:5601/

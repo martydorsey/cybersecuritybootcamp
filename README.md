@@ -1,14 +1,14 @@
 The files in this repository were used to configure the network depicted below.
 
-(images/NetworkDiagram.jpg)
+[NetworkDiagram](images/NetworkDiagram.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. 
 They can be used to either recreate the entire deployment pictured above. 
 Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  (ansible/pentest.yml)
-  (ansible/install-elk.yml)
-  (ansible/file-playbook.yml)
+  [pentest.yml](ansible/pentest.yml)
+  [install-elk.yml](ansible/install-elk.yml)
+  [file-playbook.yml](ansible/file-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -120,6 +120,7 @@ How do I specify which machine to install the ELK server on versus which to inst
 - _Which URL do you navigate to in order to check that the ELK server is running? http://[elk public-ip]:5601/
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.__
+
 -ssh into the jumpbox , ssh yourusername@[jumpbox public IP address]
 
 -start the ansible Docker container, sudo docker start [ansible container]
@@ -127,8 +128,10 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 -Attach a shell to the ansible docker container with the command, sudo docker attach [ansible container]
 
 -run the playbooks with following commands
-    ansible-playbook /etc/ansible/pentest.yml - 
+    ansible-playbook /etc/ansible/pentest.yml 
+
     ansible-playbook /etc/ansible/install-elk.yml-configures the servers listed as [elkserver]
+
     ansible-playbook /etc/ansible/roles/filebeat-playbook.yml - configures the server listed as [webserver]
 
 -With followiing this order everything should be configured properly and kibana can be access at http://[elk server ip]:5601/app/kibana

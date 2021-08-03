@@ -1,14 +1,14 @@
 The files in this repository were used to configure the network depicted below.
 
-[NetworkDiagram](images/NetworkDiagram.jpg)
+[NetworkDiagram](Diagrams/NetworkDiagram.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. 
 They can be used to either recreate the entire deployment pictured above. 
 Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  [pentest.yml](ansible/pentest.yml.txt)
-  [install-elk.yml](ansible/install-elk.yml.txt)
-  [file-playbook.yml](ansible/file-playbook.yml.txt)
+  [pentest.yml](Ansible/pentest.yml.txt)
+  [install-elk.yml](Ansible/install-elk.yml.txt)
+  [file-playbook.yml](Ansible/file-playbook.yml.txt)
 
 This document contains the following details:
 - Description of the Topologu
